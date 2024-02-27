@@ -50,7 +50,7 @@ export const Banner =() =>{
                                 <h1>{'A '}<span className="wrap">{text}</span></h1>
                             </div>
                             
-                            <p>Something Something Something Something Something Something Something Something Something Something Something Something Something Something Something Something Something Something Something </p>
+                            <p>Graduate from The University of Melbourne, study master of Information Technology, eager to secure a role in entry level website developer, or game developer.</p>
                         </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img src={me} />
@@ -62,7 +62,7 @@ export const Banner =() =>{
                 <div className='container'>
                     <div className="about-bx">
                         <h2>ABOUT</h2>
-                        <p>SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING </p>
+                        <p>Skilled and experienced with software and game development. Able to problem solve, collaborate as part of a productive team and self-manage independent projects</p>
                     </div>
                 </div>
                 

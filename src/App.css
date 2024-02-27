@@ -474,7 +474,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .background-image-right {
   top: 20%;
-  position: absolute;
+  position: absolute; 
   bottom: 0;
   width: 35%;
   right: 0;
@@ -494,7 +494,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .modal-content-wrapper {
   position: fixed;
-  width: 50vw;
+  width: 60%;
   max-height: 70vh;
   background: white;
   margin: auto;
@@ -620,7 +620,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project-content-des{
-  padding:50px 250px;
+  padding:3% 10%;
   text-align: left;
 }
 
@@ -795,6 +795,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
   color: #5a5a5a;
   border-radius: 4px;
+}
+
+.contact-button-img{
+  width:20% !important;
+  height: 20% !important;
 }
 
 .email-modal-exit-button {

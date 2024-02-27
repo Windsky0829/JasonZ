@@ -2,8 +2,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import logo from "../images/logo-white.png";
 import navIcon1 from "../images/twitter.png";
 import navIcon2 from "../images/linkedin.png";
-import navIcon3 from "../images/github.png";
-import download from '../images/download.png'
+import navIcon3 from "../images/github2.png";
+import download from '../images/download2.png'
 
 export const Footer = () => {
   return (
@@ -15,9 +15,8 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={{ span: 4, offset: 4 }} className="text-center text-sm-end">
             <div className="social-icon-foot">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/hongrui-zhang-06b03a1ab"><img src={navIcon2} alt="Icon" /></a>
+              <a href="https://github.com/Windsky0829"><img src={navIcon3} alt="Icon" /></a>
               <a href="#" download="JasonResume.pdf"><img src={download} alt='Resume download'/></a>
             </div>
             <p>Copyright 2024. All Rights Reserved</p>

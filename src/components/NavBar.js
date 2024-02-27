@@ -1,14 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState,useEffect } from 'react';
-import logoB from '../images/logo-black.png'
 import logoW from '../images/logo-white.png'
 import linkin from '../images/linkedin.png'
-import twitter from '../images/twitter.png'
-import download from '../images/download.png'
-import navIcon3 from "../images/github.png";
+import download from '../images/download2.png'
+import navIcon3 from "../images/github2.png";
+import resume from "../Jason_Resume.pdf";
 
 export const NavBar = (props) =>{
     const [activeLink,setActiveLink] = useState('home');
@@ -56,10 +54,9 @@ export const NavBar = (props) =>{
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href='#'><img src={linkin} alt='linkin'/></a>
-                <a href='#'><img src={twitter} alt='twitter'/></a>
+                <a href='https://www.linkedin.com/in/hongrui-zhang-06b03a1ab'><img src={linkin} alt='linkin'/></a>
                 <a href='https://github.com/Windsky0829'><img src={navIcon3} alt='Git hub'/></a>
-                <a href="#" download="JasonResume.pdf"><img src={download} alt='Resume download'/></a>
+                <a href={resume} download="JasonResume"><img src={download} alt='Resume download'/></a>
             </div>
             <button className='vvd' onClick={scrollToTargetArea}><span>Let's Connect</span></button>
           </span>

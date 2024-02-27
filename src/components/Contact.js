@@ -4,6 +4,7 @@ import contactImg from "../images/project_sample.png";
 import { motion,AnimatePresence } from "framer-motion";
 import closeicon from "../images/icons8-close-64.png"
 import imgBack from "../images/background2.png"
+import sending from "../images/paper-plane-small.png"
 
 
 
@@ -159,7 +160,7 @@ export const Contact =() =>{
 
         
         try {
-            let response=await fetch("http://localhost:5000/contact",{
+            let response=await fetch("http://jasonz.net/contact",{
                 method:"POST",
                 headers:{
                     "Content-Type":"Application/json;charset=utf-8",
@@ -175,12 +176,10 @@ export const Contact =() =>{
                 setStatus({success:false,message:"Something went wrong, please try again!"});
             }
         }catch (error) {
-            // 处理发送过程中的错误
             setStatus({ success: false, message: "Error occurred while sending message." });
-            //emailmodalRef.current.open(); // 显示模态窗口
         } finally {
             setButtonText("Send");
-            setFormDetails(formInitialDetails); // 可选：重置表单为初始状态
+            setFormDetails(formInitialDetails); 
         }
     }
 
@@ -213,7 +212,7 @@ export const Contact =() =>{
                                     <EmailModal
                                         ref={emailmodalRef}>
                                     </EmailModal>
-                                    <button type="submit" className="submitButton"><span>{buttonText}</span></button>
+                                    <button type="submit" className="submitButton"><span>{buttonText}</span>          <img src={sending} className="contact-button-img"/></button>
                                 </Col>
                                 
                                 
