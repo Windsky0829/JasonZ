@@ -151,7 +151,7 @@ router.post("/contact",(req,res) => {
         <tr>
         <td class="pad" style="width:100%;">
         <div align="center" class="alignment" style="line-height:10px">
-        <div style="max-width: 680px;"><img alt="Yourlogo Light" src="./server/asset/head_1.png" style="display: block; height: auto; border: 0; width: 100%;" title="Yourlogo Light" width="680"/></div>
+        <div style="max-width: 680px;"><img alt="Yourlogo Light" src="https://jasonz.net/assets/head_1.png" style="display: block; height: auto; border: 0; width: 100%;" title="Yourlogo Light" width="680"/></div>
         </div>
         </td>
         </tr>
@@ -177,7 +177,7 @@ router.post("/contact",(req,res) => {
         <tr>
         <td class="pad" style="width:100%;">
         <div align="center" class="alignment" style="line-height:10px">
-        <div style="max-width: 93px;"><img alt="Check Icon" src="images/check-icon.png" style="display: block; height: auto; border: 0; width: 100%;" title="Check Icon" width="93"/></div>
+        <div style="max-width: 93px;"><img alt="Check Icon" src="https://jasonz.net/assets/check-icon.png" style="display: block; height: auto; border: 0; width: 100%;" title="Check Icon" width="93"/></div>
         </div>
         </td>
         </tr>
@@ -241,7 +241,7 @@ router.post("/contact",(req,res) => {
         <tr>
         <td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
         <div align="center" class="alignment" style="line-height:10px">
-        <div style="max-width: 340px;"><img alt="Yourlogo Light" src="images/foot.png" style="display: block; height: auto; border: 0; width: 100%;" title="Yourlogo Light" width="340"/></div>
+        <div style="max-width: 340px;"><img alt="Yourlogo Light" src="https://jasonz.net/assets/foot.png" style="display: block; height: auto; border: 0; width: 100%;" title="Yourlogo Light" width="340"/></div>
         </div>
         </td>
         </tr>
@@ -252,8 +252,8 @@ router.post("/contact",(req,res) => {
         <div align="center" class="alignment">
         <table border="0" cellpadding="0" cellspacing="0" class="social-table" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block;" width="72px">
         <tr>
-        <td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com" target="_blank"><img alt="Facebook" height="32" src="images/facebook2x.png" style="display: block; height: auto; border: 0;" title="Facebook" width="32"/></a></td>
-        <td style="padding:0 2px 0 2px;"><a href="https://www.twitter.com" target="_blank"><img alt="Twitter" height="32" src="images/twitter2x.png" style="display: block; height: auto; border: 0;" title="Twitter" width="32"/></a></td>
+        <td style="padding:0 2px 0 2px;"><a href="https://www.linkedin.com/in/hongrui-zhang-06b03a1ab" target="_blank"><img alt="Facebook" height="32" src="https://jasonz.net/assets/linkedin.png" style="display: block; height: auto; border: 0;" title="Facebook" width="32"/></a></td>
+        <td style="padding:0 2px 0 2px;"><a href="https://github.com/Windsky0829" target="_blank"><img alt="Github" height="32" src="https://jasonz.net/assets/github.png" style="display: block; height: auto; border: 0;" title="Twitter" width="32"/></a></td>
         </tr>
         </table>
         </div>
@@ -304,10 +304,6 @@ router.post("/contact",(req,res) => {
         <td class="alignment" style="vertical-align: middle; text-align: center;"><!--[if vml]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="display:inline-block;padding-left:0px;padding-right:0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><![endif]-->
         <!--[if !vml]><!-->
         <table cellpadding="0" cellspacing="0" class="icons-inner" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; margin-right: -4px; padding-left: 0px; padding-right: 0px;"><!--<![endif]-->
-        <tr>
-        <td style="vertical-align: middle; text-align: center; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 6px;"><a href="http://designedwithbeefree.com/" style="text-decoration: none;" target="_blank"><img align="center" alt="Beefree Logo" class="icon" height="32" src="images/Beefree-logo.png" style="display: block; height: auto; margin: 0 auto; border: 0;" width="34"/></a></td>
-        <td style="font-family: 'Inter', sans-serif; font-size: 15px; font-weight: undefined; color: #1e0e4b; vertical-align: middle; letter-spacing: undefined; text-align: center;"><a href="http://designedwithbeefree.com/" style="color: #1e0e4b; text-decoration: none;" target="_blank">Designed with Beefree</a></td>
-        </tr>
         </table>
         </td>
         </tr>
