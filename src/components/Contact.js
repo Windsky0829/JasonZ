@@ -160,7 +160,7 @@ export const Contact =() =>{
 
         
         try {
-            let response=await fetch("http://jasonz.net/contact",{
+            let response=await fetch("/contact",{
                 method:"POST",
                 headers:{
                     "Content-Type":"Application/json;charset=utf-8",
