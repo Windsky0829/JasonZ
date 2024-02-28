@@ -13,21 +13,11 @@ app.listen(5000,()=> console.log("Server Running"));
 
 
 const contactEmail = nodemailer.createTransport({
-    host: "smtp.hostinger.com",
-    secure: true, 
-    /*secureConnection: false,
-    tls: {
-    ciphers: "SSLv3",
-    },
-    requireTLS: true,
-    port: 465,
-    debug: true,
-    connectionTimeout: 10000,*/
-    port: 465,
+    service:'gmail',
     auth:{
-        user:"jasonzhang@jasonz.net",
-        pass:"Zhrghx99@"
-    }
+        user:"jasonzhang785@gmail.com",
+        pass:"mticmdopnxhxqksq"
+    },
 })
 
 contactEmail.verify((error)=>{
@@ -45,7 +35,7 @@ router.post("/contact",(req,res) => {
     const phone=req.body.phone;
     const mail={
         from:name,
-        to:"jasonzhang@jasonz.net",
+        to:"jasonz000829@gmail.com",
         subject:"Contact Form Submission - Portfolio",
         html:`<p>Name:  ${name}</p>
         <p>Email:  ${email}</p>
@@ -54,7 +44,7 @@ router.post("/contact",(req,res) => {
     };
 
     const notifMail={
-        from:"jasonzhang@jasonz.net",
+        from:"jasonzhang785@gmail.com",
         to:email,
         subject:"Thank you for your contact!",
         html:`<!DOCTYPE html>
