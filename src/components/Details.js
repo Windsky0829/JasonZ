@@ -8,8 +8,7 @@ export const Details = () =>{
 
             
                 <h2>DETAILS</h2>
-                <p>SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING SOMETHING </p>
-                <Accordion>
+                <Accordion className="Accordion">
                     <Accordion.Item eventKey="0" className="item">
                         <Accordion.Header>QUALIFICATIONS</Accordion.Header>
                         <Accordion.Body>
@@ -37,12 +36,12 @@ export const Details = () =>{
                             <ul>
                                 <li><p>Skills</p></li>
                                 <ul>
-                                    <li><p>Agile Methodologies:Scrum</p></li>
+                                    <li><p>Agile Methodologies: Scrum</p></li>
                                     <li><p>Setting Deadlines & Milestones</p></li>
                                     <li><p>Sprint Planning, Reviews & Retrospectives</p></li>
                                     <li><p>UI/UX Design</p></li>
-                                    <li><p>Website Design and Eevelopment</p></li>
-                                    <li><p>Game Design</p></li>
+                                    <li><p>Website Design and Development</p></li>
+                                    <li><p>Game Design and Development</p></li>
                                     <li><p>Game Immersive Environment Design</p></li>
                                     <li><p>Photo, Video, Audio Process</p></li>
                                 </ul>
@@ -57,11 +56,12 @@ export const Details = () =>{
                                     <li><p>Android Java</p></li>
                                     <li><p>Unreal Engine(UE4)</p></li>
                                     <li><p>PhotoShop</p></li>
+                                    <li><p>Reaper</p></li>
                                     <li><p>R</p></li>
+                                    <li><p>Tableau</p></li>
                                     <li><p>Confluence</p></li>
                                     <li><p>Trello</p></li>
                                     <li><p>Slack</p></li>
-                                    <li><p>Tableau</p></li>
                                     <li><p>Git</p></li>
                                     
                                 </ul>
@@ -90,6 +90,18 @@ export const Details = () =>{
                                     <ul>
                                         <li><p>Customer Service</p></li>
                                     </ul>
+                                </ul>
+                            </ul>
+                        </Accordion.Body>
+                    </Accordion.Item>
+
+                    <Accordion.Item eventKey="4" className="item">
+                        <Accordion.Header>REFERENCE</Accordion.Header>
+                        <Accordion.Body>
+                            <ul>
+                                <li><p><strong>Ryan Josh</strong>, Monash University</p></li>
+                                <ul>
+                                    <li><p>Graduate project lead tutor</p></li>
                                 </ul>
                             </ul>
                         </Accordion.Body>

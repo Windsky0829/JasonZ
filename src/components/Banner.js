@@ -62,7 +62,7 @@ export const Banner =() =>{
                 <div className='container'>
                     <div className="about-bx">
                         <h2>ABOUT</h2>
-                        <p>Skilled and experienced with software and game development. Able to problem solve, collaborate as part of a productive team and self-manage independent projects</p>
+                        <p>Skilled and experienced with <strong>Website</strong> and <strong>Game</strong> Development. Able to problem solve, collaborate as part of a productive team and self-manage independent projects</p>
                     </div>
                 </div>
                 
