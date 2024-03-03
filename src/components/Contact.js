@@ -1,6 +1,6 @@
 import React,{useState,useEffect,useRef, forwardRef, useImperativeHandle} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../images/project_sample.png";
+import contactImg from "../images/ContactImage.jpg";
 import { motion,AnimatePresence } from "framer-motion";
 import closeicon from "../images/icons8-close-64.png"
 import imgBack from "../images/background2.png"

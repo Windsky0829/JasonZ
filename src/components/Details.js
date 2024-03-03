@@ -78,6 +78,10 @@ export const Details = () =>{
                                     <li><p><strong>Research Center for Global Youth (China)(2022-2023)</strong></p></li>
                                     <ul>
                                         <li><p>Volunteer, Social Media Department Mananger</p></li>
+                                        <ul>
+                                            <li><p>Collaborated with researchers to assist in the completion of reports or documents for publication on social media platforms.</p></li>
+                                            <li><p>Coordinated personnel to complete tasks through estimating workloads and/or resource requirements.</p></li>
+                                        </ul>
                                     </ul>
                                 </ul>
                                 <li><p>EXPERIENCE</p></li>

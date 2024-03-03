@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-export const ProjectContent = ({ content, imgShowCase }) =>{
+export const ProjectContent = ({  content, contentType,imgShowCase,videoUrl }) =>{
     return(
         <section className="project-content">
             <Container className="project-content-containter">
@@ -13,7 +13,11 @@ export const ProjectContent = ({ content, imgShowCase }) =>{
                     </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={imgShowCase} alt="project image"/>
+                    {contentType === "video" && videoUrl ? (
+                            <iframe width="100%" height="315" src={videoUrl} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        ) : (
+                            <img src={imgShowCase} alt="project image" />
+                        )}
                     </Col>
                 </Row>  
             </Container>

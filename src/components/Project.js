@@ -30,17 +30,18 @@ export const Project = () =>{
             description:"An interactive, immersive game environment",
             content:`<div className="Pro-Content">
             <ul>
-                <li><p>Product Owner</p></li>
+                <li><p>Producer</p></li>
             </ul>
                 <p><strong>Hospital</strong> is a first person horror game, player need to searching around the hospital to find information and the keys to escape from the hospital.</p>
                 <h3><strong>Key Responsibilities</strong></h3>
                 <ul>
-                    <li><p>Design the Environment</p></li>
-                    <li><p>Design the game story and process</p></li>
-                    <li><p>Model the whole environment by Maya</p></li>
-                    <li><p>Process the photo to Texture, Normal Map</p></li>
+                    <li><p>Design the Environment.</p></li>
+                    <li><p>Design the game story and process.</p></li>
+                    <li><p>Model the whole environment by Maya.</p></li>
+                    <li><p>Process the photo to Texture, Normal Map.</p></li>
                 </ul>
             </div>`,
+            contentType: "img",
             imgUrl:ProjImg1,
             imgBack:ProjImgBack1,
             imgShowCase:ProjShow1,
@@ -50,17 +51,18 @@ export const Project = () =>{
             description:"An horror immersive game environment",
             content:`<div className="Pro-Content">
             <ul>
-            <li><p>Product Owner</p></li>
+            <li><p>Producer</p></li>
         </ul>
         <p><strong>Street</strong> is a first person horror environment.</p>
         <h3><strong>Key Responsibilities</strong></h3>
         <ul>
-            <li><p>Design the Environment</p></li>
-            <li><p>Design the game audio</p></li>
-            <li><p>Model the whole environment by Maya</p></li>
-            <li><p>Process the photo to Texture, Normal Map</p></li>
+            <li><p>Design the Environment.</p></li>
+            <li><p>Design the game audio.</p></li>
+            <li><p>Model the whole environment by Maya.</p></li>
+            <li><p>Process the photo to Texture, Normal Map.</p></li>
         </ul>
         </div>`,
+        contentType: "img",
             imgUrl:ProjImg2,
             imgBack:ProjImgBack2,
             imgShowCase:ProjShow2,
@@ -71,24 +73,24 @@ export const Project = () =>{
             content:`
             <div className="Pro-Content">
                 <ul>
-                    <li><p>Product Owner</p></li>
+                    <li><p>Product Owner, Lead Programmer UE4 C++ & Blueprints</p></li>
                 </ul>
                 <p><strong>The Island</strong> is a first-person shooter survival game. Unlike most other FPS and survival games, this game's art style is designed to be more adorable. A unique feature of the game is the design of bullets as paint sprays, which blind enemies, drawing inspiration from 'Splatoon'.</p>
                 <h3><strong>Key Responsibilities</strong></h3>
                 <ul>
-                    <li><p>Design the Game style and story</p></li>
-                    <li><p>Designed game story and mechanics</p></li>
+                    <li><p>Designed game story and mechanics, for example how to play the game, where the game can "hook" player</p></li>
                     <li><p>Built Item system, Crafting System, Item spawning, Item interaction and Shooting system as
                         game design document(All finished by C++)</p></li>
                     <li><p>Created UI functions and Draw</p></li>
                     <li><p>Acted as a product owner on projects, assigned work, held meetings, and communicated
                         with tutors</p></li>
-                        <li><p>Lead whole team to finish project, for example helping team members solve problems</p></li>
-                        <li><p>Coordinate different opinions of members and finally decide on best one</p></li>
+                    <li><p>Lead whole team to finish project, for example helping team members solve problems</p></li>
+                    <li><p>Coordinate different opinions of members and finally decide on best one</p></li>
                 </ul>
 
             </div>
             `,
+            contentType: "img",
             imgUrl:ProjImg1,
             imgBack:ProjImgBack1,
             imgShowCase:ProjShow1,
@@ -99,7 +101,25 @@ export const Project = () =>{
         {
             title:"SMART on FHIR Insulin App",
             description:"An SMART on FHIR Insulin App for Royal Melbourne Hospital.",
-            content:`<h2>Overview</h2><p>This project is about <strong>innovative technology</strong> that aims to revolutionize the industry. </p>`,
+            content:`
+            <div className="Pro-Content">
+                <ul>
+                    <li><p>Architecture Lead</p></li>
+                </ul>
+                <p>The <strong>Desktop SMART Insulin Calculator App</strong> for Doctors represents a cutting-edge solution poised to
+                    revolutionize diabetes management for healthcare practitioners. While it does not store patient
+                    information, it aims to integrate with the hospital's Electronic Health Record (EHR) system, promising
+                    unparalleled efficiency and precision in diabetes care.</p>
+                <ul>
+                    <li><p>Wrote the User Story and Sprint 3 Test Plan document, contributing to the project's strategic planning and execution.</p></li>
+                    <li><p>Program the Feedback function with React and nodejs.</p></li>
+                    <li><p>Developed the insulin calculator algorithm and integrated with a valid patient test on frontend.</p></li>
+                    <li><p>Responsible for identifying technical risks, developing mitigation strategies, and managing technical debt to ensure system stability and performance.</p></li>
+                </ul>
+
+            </div>
+            `,
+            contentType: "img",
             imgUrl:ProjImg4,
             imgBack:ProjImgBack4,
             imgShowCase:ProjShow4,
@@ -110,10 +130,23 @@ export const Project = () =>{
         {
             title:"Soout",
             description:"A social fitness mobile application.",
-            content:`<h2>Overview</h2><p>This project is about <strong>innovative technology</strong> that aims to revolutionize the industry. </p>`,
+            content:`
+            <div className="Pro-Content">
+                <ul>
+                    <li><p>Frontend Programmer</p></li>
+                </ul>
+                <p><strong>Soout</strong> is a Android mobile application bring outdoors to social life.</p>
+                <ul>
+                    <li><p>Design the UI and UX of the application to provide a user friendly UI</p></li>
+                    <li><p>Program the User Profile, Log in, Sign in, Forgot Password, Send Verifications Email activities and functions.</p></li>
+                </ul>
+            </div>
+            `,
+            contentType: "video",
             imgUrl:ProjImg5,
             imgBack:ProjImgBack5,
             imgShowCase:ProjShow5,
+            videoUrl:"https://www.youtube.com/embed/Sdtkl2tXr5M?si=sASS-NwHpdgLsR_J",
         },
     ];
 
@@ -121,23 +154,43 @@ export const Project = () =>{
         {
             title:"VIC Road Crashes",
             description:"A Tableau data visualization about VIC Road Crashes.",
-            content:`<h2>Overview</h2><p>This project is about <strong>innovative technology</strong> that aims to revolutionize the industry. </p>`,
+            content:`
+            <div className="Pro-Content">
+                <ul>
+                    <li><p>Producer</p></li>
+                </ul>
+                <p><strong>VIC Road Crashes</strong> is a Tableau Data Visualisation dashboard, present data that supports a clear and valid data story. The dashboard is exploratory or explanatory in nature, but it must have a coherent and clear theme or message about your data to help VicRoads reduce the number (social cost) of crashes.</p>
+                <ul>
+                    <li><p>Analsing the data to create a coherent and clear theme.</p></li>
+                    <li><p>Design the whole dashboard style by the theme.</p></li>
+                    <li><p>Design the chart by the information that provide by the data.</p></li>
+                    <li><p>Using Tableau create a interactive and creative dashboard.</p></li>
+                </ul>
+            </div>
+            `,
+            contentType: "img",
             imgUrl:ProjImg6,
             imgBack:ProjImgBack4,
             imgShowCase:ProjImg6,
         },
         {
-            title:"Numbats observation",
-            description:"A R data visualization about Numbats observation.",
-            content:`<h2>Overview</h2><p>This project is about <strong>innovative technology</strong> that aims to revolutionize the industry. </p>`,
-            imgUrl:ProjImg7,
-            imgBack:ProjImgBack7,
-            imgShowCase:ProjShow7,
-        },
-        {
             title:"Visualization about Traffic",
             description:"A R data visualization about traffic for some state government departments.",
-            content:`<h2>Overview</h2><p>This project is about <strong>innovative technology</strong> that aims to revolutionize the industry. </p>`,
+            content:`
+            <div className="Pro-Content">
+                <ul>
+                    <li><p>Main Developer & Main Designer</p></li>
+                </ul>
+                <p><strong>Visualization about Traffic</strong> is a data visualization about traffic for some state government departments developed by R shiny and Tableau.</p>
+                <ul>
+                    <li><p>Analsing the data to create a coherent and clear theme.</p></li>
+                    <li><p>Using R shiny developed "Pedestrian Sensor and Interactive Chart", provide a data drilling feature.</p></li>
+                    <li><p>Using R shiny developed interactive "Traffic volume map", provide a clear showcase for the traffic volume</p></li>
+                    <li><p>Design the Dashboard style and program CSS</p></li>
+                </ul>
+            </div>
+            `,
+            contentType: "img",
             imgUrl:ProjImg8,
             imgBack:ProjImgBack8,
             imgShowCase:ProjShow8,

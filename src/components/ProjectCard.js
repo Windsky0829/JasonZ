@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef, forwardRef, useImperativeHandle  } 
 import closeicon from "../images/icons8-close-64.png"
 import { motion,AnimatePresence } from "framer-motion";
 
-export const ProjectCard=({title,description,content,imgUrl,imgBack,imgShowCase})=>{
+export const ProjectCard=({title,description,content,contentType,imgUrl,imgBack,imgShowCase,videoUrl})=>{
   
     const ProjectModal=forwardRef(({children},ref) => {
       const [open, setOpen] = useState(false);
@@ -114,8 +114,10 @@ export const ProjectCard=({title,description,content,imgUrl,imgBack,imgShowCase}
                 <ProjectModal
                 ref={modalRef}>
                     <ProjectContent 
+                            contentType={contentType}
                             content={content}
                             imgShowCase={imgShowCase}
+                            videoUrl={videoUrl}
                         />
                 </ProjectModal>
 
