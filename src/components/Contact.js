@@ -26,18 +26,15 @@ export const Contact =() =>{
         const [modalMessage, setModalMessage] = useState("");
 
         useEffect(() => {
-            console.log("Modal open state: ", emailOpen);
           }, [emailOpen]);
 
         useImperativeHandle(ref,()=>{
             return{
             open: (message="") => {
-                console.log(message);
                 setModalMessage(message); 
                 setEmailOpen(true);
               },
             close:()=>{
-                console.log('Closing modal...');
                 setEmailOpen(false);
                 setModalMessage(""); 
               }
@@ -155,6 +152,13 @@ export const Contact =() =>{
             return; // 停止处理函数
         }
 
+        if (!/^\+?[0-9]+$/.test(formDetails.phone)) {
+          const message = "Please enter a valid phone number.";
+          setTimeout(() => emailmodalRef.current.open(message), 0);
+          setStatus({success: false, message: "Please enter a valid phone number."});
+          return; // 停止处理函数
+      }
+
         setButtonText('Sending...');
         
 
@@ -183,6 +187,31 @@ export const Contact =() =>{
         }
     }
 
+    function isValidEmail(email) {
+      return /\S+@\S+\.\S+/.test(email);
+    }
+
+    function handleEmailBlur(e) {
+      const email = e.target.value;
+      if (!isValidEmail(email)) {
+        // 如果不是有效的电子邮件格式，清除输入内容
+        onFormUpdate('email', '');
+    
+        // 在这里，您可以添加执行动画或显示错误消息的代码
+      }
+      // 如果是有效的电子邮件，保持不变
+    }
+
+    function handlePhoneBlur(e) {
+      const phone = e.target.value;
+      // 使用正则表达式检查输入是否只包含数字
+      if (!/^\+?[0-9]+$/.test(phone)) {
+        // 如果不是纯数字，清除输入内容
+        onFormUpdate('phone', '');
+      }
+    }
+    
+
     return(
         <section className="contact" id="connect">
             <Container>
@@ -192,27 +221,63 @@ export const Contact =() =>{
                     </Col>
                     <Col md={6}>
                         <h2>CONTACT ME</h2>
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} noValidate>
                             <Row>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.firstName} placeholder="First Name*" onChange={(e) => onFormUpdate('firstName',e.target.value)} />
+                                    <div className="input-container">
+                                      <div className="entryarea">
+                                        <input type="text" value={formDetails.firstName}  onChange={(e) => onFormUpdate('firstName',e.target.value)} required/>
+                                        <div className="labelline">First Name</div>
+                                      </div>
+                                    </div>
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.lastName} placeholder="Last Name*" onChange={(e) => onFormUpdate('lastName',e.target.value)} /> 
+                                <div className="input-container">
+                                      <div className="entryarea">
+                                    <input type="text" value={formDetails.lastName}  onChange={(e) => onFormUpdate('lastName',e.target.value)} required/> 
+                                    <div className="labelline">Last Name</div>
+                                      </div>
+                                    </div>
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="tel" value={formDetails.phone} placeholder="Phone No.*" onChange={(e) => onFormUpdate('phone',e.target.value)} /> 
+                                <div className="input-container">
+                                      <div className="entryarea">
+                                    <input type="tel" pattern="[0-9]*" value={formDetails.phone}  onChange={(e) => onFormUpdate('phone',e.target.value)} onBlur={handlePhoneBlur} required/> 
+                                    <div className="labelline">Phone Number</div>
+                                      </div>
+                                    </div>
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="email" value={formDetails.email} placeholder="Email*" onChange={(e) => onFormUpdate('email',e.target.value)} /> 
+                                <div className="input-container">
+                                      <div className="entryarea">
+                                    <input type="email" value={formDetails.email}  onChange={(e) => onFormUpdate('email',e.target.value)} onBlur={handleEmailBlur} required/> 
+                                    <div className="labelline">Email</div>
+                                      </div>
+                                    </div>
                                 </Col>
                                 <Col>
-                                    <textarea row="6" value={formDetails.message} placeholder="Message*" onChange={(e) => onFormUpdate('message',e.target.value)}></textarea>
-                                    
-                                    <EmailModal
-                                        ref={emailmodalRef}>
-                                    </EmailModal>
-                                    <button type="submit" className="submitButton"><span>{buttonText}</span>          <img src={sending} className="contact-button-img"/></button>
+                                <Row className="align-items-center">
+                                <Col md={12} className="mb-4">
+                                <div className="input-container-me">
+                                      <div className="entryarea-me">
+                                      <textarea row="6" value={formDetails.message} onChange={(e) => onFormUpdate('message',e.target.value)} required></textarea>
+                                      <div className="labelline">Message</div>
+                                      </div>
+                                      </div>
+                                </Col>
+                                <Col md={12}>
+                                <EmailModal
+                                          ref={emailmodalRef}>
+                                      </EmailModal>
+                                      <div className="button-container">
+                                        <button type="submit" className="submitButton"><span>{buttonText}</span>          <img src={sending} className="contact-button-img" /></button>
+                                      </div>
+                                </Col>
+
+                                </Row>
+                                  
+                                      
+                                  
                                 </Col>
                                 
                                 

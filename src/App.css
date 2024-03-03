@@ -299,6 +299,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: auto 10vw;
 }
 
+
+
+
+
+
+
+
+
+
 /*Details*/
 .detail{
   padding:80px 0;
@@ -700,6 +709,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
 }
 .contact img {
   width: 70%;
@@ -710,33 +720,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
   margin-bottom: 30px;
   color:black;
+  text-align: center;
 }
-.contact form input, .contact form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  color: #a7a7a7;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-}
-.contact form input:focus, .contact form textarea:focus {
-  background: rgb(97, 97, 97);
-  color: #121212;
-}
-.contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #949494;
-}
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
+
 .contact form .submitButton {
   font-weight: 700;
   color: #ffffff;
@@ -747,6 +733,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 15px;
   position: relative;
   transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.button-container{
+  text-align: center;
+  margin-top: 20px;
 }
 .contact form .submitButton span {
   z-index: 1;
@@ -771,6 +763,101 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form .submitButton:hover::before {
   width: 100%;
 }
+.input-container{
+  width:100%;
+}
+
+.entryarea{
+  position:relative;
+  height: 80px;
+  line-height: 30px;
+  padding: 0;
+}
+
+.entryarea input{
+  position: absolute;
+  width: 100%;
+  outline:none;
+  font-size: 1.5em;
+  padding:10px 10px;
+  line-height: 30px;
+  border-radius: 10px;
+  border:2px solid #000000;
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+  text-align: left !important;
+}
+
+.labelline{
+  position: absolute;
+  font-size: 1.6em;
+  color:#000000;
+  padding:0 5px;
+  margin: 0 20px;
+  background-color: #ffffff;
+  transition: 0.2s ease;
+}
+
+.entryarea input:focus,
+.entryarea input:valid{
+  color:#000000;
+  border:4px solid #000000;
+
+}
+.entryarea input:focus + .labelline,
+.entryarea input:valid + .labelline{
+  color:#000000;
+  height: 30px;
+  line-height: 30px;
+  padding:0 12px;
+  transform: translate(-15px,-16px) scale(0.88);
+  z-index: 1111;
+}
+
+
+.entryarea-me{
+  position:relative;
+  height: 25vh;
+  line-height: 30px;
+  padding: 0;
+}
+
+.entryarea-me textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1.5em;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+  text-align: left;
+  resize: none;
+}
+
+.entryarea-me input:focus,
+.entryarea-me input:valid{
+  color:#000000;
+  border:4px solid #000000;
+
+}
+
+
+/* 调整 .labelline 的样式以匹配 textarea 的行为 */
+.entryarea-me textarea:focus + .labelline,
+.entryarea-me textarea:valid + .labelline {
+  color: #000000;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  transform: translate(-15px, -20px) scale(0.88); /* 可能需要调整 translateY 的值以适应 textarea */
+  z-index: 1111;
+}
+
 
 
 
@@ -943,10 +1030,6 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 
 
-
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;

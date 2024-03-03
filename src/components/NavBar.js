@@ -31,11 +31,9 @@ export const NavBar = (props) =>{
     }
 
     function scrollToTargetArea() {
-      // 使用 document.querySelector 获取目标元素
       const targetArea = document.querySelector('#connect');
       
       if (targetArea) {
-        // 使用 scrollIntoView 方法滚动到目标元素
         targetArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
