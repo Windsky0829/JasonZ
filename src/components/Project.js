@@ -87,6 +87,8 @@ export const Project = () =>{
                     <li><p>Lead whole team to finish project, for example helping team members solve problems</p></li>
                     <li><p>Coordinate different opinions of members and finally decide on best one</p></li>
                 </ul>
+                <h3><strong>Achievement</strong></h3>
+                <p>Successfully designed and implemented an immersive game environment for 'The Island' . Spearheaded the development of core game functionalities, including item systems, crafting, item spawning, interactions, and shooting mechanisms, all engineered in C++. These innovations significantly enhanced game interactivity and player experience.</p>
 
             </div>
             `,
@@ -99,7 +101,7 @@ export const Project = () =>{
 
     const webProjects=[
         {
-            title:"SMART on FHIR Insulin App",
+            title:"SMART on FHIR Insulin App (Phase 1)",
             description:"An SMART on FHIR Insulin App for Royal Melbourne Hospital.",
             content:`
             <div className="Pro-Content">
@@ -116,7 +118,8 @@ export const Project = () =>{
                     <li><p>Developed the insulin calculator algorithm and integrated with a valid patient test on frontend.</p></li>
                     <li><p>Responsible for identifying technical risks, developing mitigation strategies, and managing technical debt to ensure system stability and performance.</p></li>
                 </ul>
-
+                <h3><strong>Achievement</strong></h3>
+                <p>Successfully led the architectural design and collaborative development of the 'Desktop SMART Insulin Calculator App (Phase 1)', surpassing client expectations by flawlessly executing project deliverables. Spearheaded the creation of a critical feedback feature and developed comprehensive test cases based on client-provided insulin calculations, demonstrating technical expertise and client-centric problem solving. Authored the Sprint 3 test plan document, ensuring rigorous quality control and project alignment with client needs.</p>
             </div>
             `,
             contentType: "img",

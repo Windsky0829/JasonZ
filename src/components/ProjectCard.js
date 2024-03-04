@@ -8,7 +8,7 @@ export const ProjectCard=({title,description,content,contentType,imgUrl,imgBack,
   
     const ProjectModal=forwardRef(({children},ref) => {
       const [open, setOpen] = useState(false);
-
+      
       useImperativeHandle(ref,()=>{
         return{
           open:()=>setOpen(true),
@@ -89,6 +89,8 @@ export const ProjectCard=({title,description,content,contentType,imgUrl,imgBack,
               }}
               className="modal-content">
                 {children}
+                
+                
               </motion.div>
               
           </motion.div>

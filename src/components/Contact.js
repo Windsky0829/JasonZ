@@ -19,6 +19,10 @@ export const Contact =() =>{
     const [formDetails,setFormDetails] = useState(formInitialDetails);
     const [buttonText,setButtonText] = useState('Send');
     const [status,setStatus] = useState({});
+
+    
+    const [isSending, setIsSending] = useState(false);
+    const [imageAnimationClass, setImageAnimationClass] = useState('');
     //const [modalContent, setModalContent] = useState("");
 
     const EmailModal = forwardRef(({children},ref) => {
@@ -90,7 +94,7 @@ export const Contact =() =>{
                   <div>
                     <div className="email-img-with-mask">
                       <img src={imgBack} alt="email-Background"/>
-                      <h1>Something Went Wrong!</h1>
+                      <h1>Something Wrong!</h1>
                     </div>
                     
                   </div>
@@ -140,27 +144,26 @@ export const Contact =() =>{
             const message = "Please fill in all fields.";
             setTimeout(() => emailmodalRef.current.open(message), 0);
             setStatus({success: false, message: "Please fill in all fields."});
-            return; // 停止处理函数
+            return; 
         }
     
-        // 验证电子邮件格式
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(formDetails.email)) {
             const message ="Please enter a valid email address.";
             setTimeout(() => emailmodalRef.current.open(message), 0);
             setStatus({success: false, message: "Please enter a valid email address."});
-            return; // 停止处理函数
+            return; 
         }
 
         if (!/^\+?[0-9]+$/.test(formDetails.phone)) {
           const message = "Please enter a valid phone number.";
           setTimeout(() => emailmodalRef.current.open(message), 0);
           setStatus({success: false, message: "Please enter a valid phone number."});
-          return; // 停止处理函数
+          return; 
       }
 
-        setButtonText('Sending...');
-        
+        setButtonText('Sending');
+        setImageAnimationClass('sliding-image');
 
         
         try {
@@ -183,7 +186,9 @@ export const Contact =() =>{
             setStatus({ success: false, message: "Error occurred while sending message." });
         } finally {
             setButtonText("Send");
-            setFormDetails(formInitialDetails); 
+            setImageAnimationClass('fading-in-image'); // 发送完成后触发淡入效果
+            setFormDetails(formInitialDetails);
+            setTimeout(() => setImageAnimationClass(''), 1000);
         }
     }
 
@@ -194,22 +199,20 @@ export const Contact =() =>{
     function handleEmailBlur(e) {
       const email = e.target.value;
       if (!isValidEmail(email)) {
-        // 如果不是有效的电子邮件格式，清除输入内容
         onFormUpdate('email', '');
     
-        // 在这里，您可以添加执行动画或显示错误消息的代码
       }
-      // 如果是有效的电子邮件，保持不变
     }
 
     function handlePhoneBlur(e) {
       const phone = e.target.value;
-      // 使用正则表达式检查输入是否只包含数字
       if (!/^\+?[0-9]+$/.test(phone)) {
-        // 如果不是纯数字，清除输入内容
         onFormUpdate('phone', '');
       }
     }
+
+
+
     
 
     return(
@@ -257,7 +260,7 @@ export const Contact =() =>{
                                 </Col>
                                 <Col>
                                 <Row className="align-items-center">
-                                <Col md={12} className="mb-4">
+                                <Col md={12} className="px-1">
                                 <div className="input-container-me">
                                       <div className="entryarea-me">
                                       <textarea row="6" value={formDetails.message} onChange={(e) => onFormUpdate('message',e.target.value)} required></textarea>
@@ -270,7 +273,7 @@ export const Contact =() =>{
                                           ref={emailmodalRef}>
                                       </EmailModal>
                                       <div className="button-container">
-                                        <button type="submit" className="submitButton"><span>{buttonText}</span>          <img src={sending} className="contact-button-img" /></button>
+                                        <button type="submit" className="submitButton"><span>{buttonText}</span>  <img src={sending} className={`contact-button-img ${imageAnimationClass}`} /></button>
                                       </div>
                                 </Col>
 

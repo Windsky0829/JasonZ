@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import {Container, Row, Col} from "react-bootstrap"
 import me from '../images/me.png'
 import resume from "../Jason_Resume.pdf";
-import download from '../images/download2.png'
+import download from '../images/download.png'
 
 export const Banner =() =>{
     const [loopNum,setLoopNum]=useState(0);
@@ -53,6 +53,8 @@ export const Banner =() =>{
                             </div>
                             
                             <p>Graduate from The University of Melbourne, study master of Information Technology, eager to secure a role in entry level website developer, or game developer.</p>
+                            <a href={resume} download="JasonResume" className="download-button">Get My Resume <img src={download}/></a>
+
                         </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img src={me} />
@@ -65,8 +67,7 @@ export const Banner =() =>{
                     <div className="about-bx">
                         <h2>ABOUT</h2>
                         <p>Skilled and experienced with <strong>Website</strong> and <strong>Game</strong> Development. My expertise lies in developing innovative software solutions, solving complex problems, collaborating effectively within teams, and managing projects independently.</p>
-                        <a href={resume} download="JasonResume" className="download-button">Get Resume</a>
-
+                        
 
                     </div>
                 </div>
