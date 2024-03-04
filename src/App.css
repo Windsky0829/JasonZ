@@ -777,6 +777,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact img {
   width: 70%;
   border-radius: 20px;
+  
+}
+
+.contact-image-container{
+  text-align: center;
 }
 .contact h2 {
 	font-size: 45px;

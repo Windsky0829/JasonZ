@@ -220,7 +220,10 @@ export const Contact =() =>{
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
+                      <div className="contact-image-container">
                         <img src={contactImg} alt="Contact Me"/>
+                      </div>
+                        
                     </Col>
                     <Col md={6}>
                         <h2>CONTACT ME</h2>
