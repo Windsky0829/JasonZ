@@ -80,8 +80,8 @@ export const Project = () =>{
                 <h3><strong>Key Responsibilities</strong></h3>
                 <ul>
                     <li><p>Lead the design the game story and mechanics</p></li>
-                    <li><p>Build item system, crafting system, item spawning, item interaction and shooting system</p></li>
-                    <li><p>Design and create UI functions and draw</p></li>
+                    <li><p>Build item system, inventory system, crafting system, item spawning, item interaction and shooting system</p></li>
+                    <li><p>Design and develop inventory UI interface and function</p></li>
                     <li><p>Lead team to resolve complex problems during the build and overcome challenges</p></li>
                     <li><p>Facilitate brainstorming sessions and workshops with stakeholders</p></li>
                     <li><p>Gather and document requirement</p></li>
