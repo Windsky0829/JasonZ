@@ -2,6 +2,7 @@
 
 
 
+
 *{
   margin:0;
   padding:0;
@@ -756,6 +757,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px !important;
   text-align: left;
   font-size: 20px;
+}
+
+.project-content-des .bullet-point {
+  margin-top: 20px;
 }
 
 

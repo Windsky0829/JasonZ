@@ -18,8 +18,8 @@ import ProjImg6 from "../images/Tableau.png"
 import ProjImg7 from "../images/numbats_title.jpg"
 import ProjImgBack7 from "../images/Numbatback.png"
 import ProjShow7 from "../images/Numbats_showcase.png"
-import ProjImg8 from "../images/numbats_title.jpg"
-import ProjImgBack8 from "../images/Numbatback.png"
+import ProjImg8 from "../images/pexels-pixabay-210182.jpg"
+import ProjImgBack8 from "../images/pexels-pixabay-2101822.jpg"
 import ProjShow8 from "../images/Traffic_show.png"
 
 export const Project = () =>{
@@ -72,23 +72,32 @@ export const Project = () =>{
             description:"A cartoon style survival game",
             content:`
             <div className="Pro-Content">
+                <p><strong>Sorry! The image or video of this project haven't done yet.</strong></p>
                 <ul>
-                    <li><p>Product Owner, Lead Programmer UE4 C++ & Blueprints</p></li>
+                    <li><p>Team Leader and Principal Game Developer</p></li>
                 </ul>
                 <p><strong>The Island</strong> is a first-person shooter survival game. Unlike most other FPS and survival games, this game's art style is designed to be more adorable. A unique feature of the game is the design of bullets as paint sprays, which blind enemies, drawing inspiration from 'Splatoon'.</p>
                 <h3><strong>Key Responsibilities</strong></h3>
                 <ul>
-                    <li><p>Designed game story and mechanics, for example how to play the game, where the game can "hook" player</p></li>
-                    <li><p>Built Item system, Crafting System, Item spawning, Item interaction and Shooting system as
-                        game design document(All finished by C++)</p></li>
-                    <li><p>Created UI functions and Draw</p></li>
-                    <li><p>Acted as a product owner on projects, assigned work, held meetings, and communicated
-                        with tutors</p></li>
-                    <li><p>Lead whole team to finish project, for example helping team members solve problems</p></li>
-                    <li><p>Coordinate different opinions of members and finally decide on best one</p></li>
+                    <li><p>Lead the design the game story and mechanics</p></li>
+                    <li><p>Build item system, crafting system, item spawning, item interaction and shooting system</p></li>
+                    <li><p>Design and create UI functions and draw</p></li>
+                    <li><p>Lead team to resolve complex problems during the build and overcome challenges</p></li>
+                    <li><p>Facilitate brainstorming sessions and workshops with stakeholders</p></li>
+                    <li><p>Gather and document requirement</p></li>
+                    <li><p>Facilitate the definition of epic and stories</p></li>
+                    <li><p>Sprint planning</p></li>
+                    <li><p>Facilitate the stand up session</p></li>
+                    <li><p>Manage the team performance and review the team work</p></li>
+                    <li><p>Release management</p></li>
+                    <li><p>Facilitate the hand over session after the project go live</p></li>
                 </ul>
                 <h3><strong>Achievement</strong></h3>
-                <p>Successfully designed and implemented an immersive game environment for 'The Island' . Spearheaded the development of core game functionalities, including item systems, crafting, item spawning, interactions, and shooting mechanisms, all engineered in C++. These innovations significantly enhanced game interactivity and player experience.</p>
+                <li><p>Successfully deployed an immersive game environment as a key milestone for the project.</p></li>
+                <li><p>Spearheaded the development of core game components that form the foundation of the
+                end product.</p></li>
+                <li><p>Enhanced game interactivity and player's experience via innovative ways of development.</p></li>
+                <li><p>Been nominated as a key contributor to the success of project.</p></li>
 
             </div>
             `,
@@ -106,20 +115,29 @@ export const Project = () =>{
             content:`
             <div className="Pro-Content">
                 <ul>
-                    <li><p>Architecture Lead</p></li>
+                    <li><p><strong>Royal Melbourne Hospital</strong></p></li>
+                    <li><p>Software Developer</p></li>
                 </ul>
                 <p>The <strong>Desktop SMART Insulin Calculator App</strong> for Doctors represents a cutting-edge solution poised to
                     revolutionize diabetes management for healthcare practitioners. While it does not store patient
                     information, it aims to integrate with the hospital's Electronic Health Record (EHR) system, promising
                     unparalleled efficiency and precision in diabetes care.</p>
+                <h3><strong>Key Responsibilities</strong></h3>
                 <ul>
-                    <li><p>Wrote the User Story and Sprint 3 Test Plan document, contributing to the project's strategic planning and execution.</p></li>
-                    <li><p>Program the Feedback function with React and nodejs.</p></li>
-                    <li><p>Developed the insulin calculator algorithm and integrated with a valid patient test on frontend.</p></li>
-                    <li><p>Responsible for identifying technical risks, developing mitigation strategies, and managing technical debt to ensure system stability and performance.</p></li>
+                    <li><p>Design and build the feedback feature and some insulin calculation test cases by using React
+                    and Node.js.</p></li>
+                    <li><p>Gather requirements from business stakeholders and develop user stories.</p></li>
+                    <li><p>Contribute to sprint planning and execution.</p></li>
+                    <li><p>Facilitate the sprint testing plan and script testing scenarios.</p></li>
+                    <li><p>Supervised the risk management by identifying technical risks, developing mitigation
+                    strategies, and managing technical debt to ensure system stability and performance</p></li>
                 </ul>
                 <h3><strong>Achievement</strong></h3>
-                <p>Successfully led the architectural design and collaborative development of the 'Desktop SMART Insulin Calculator App (Phase 1)', surpassing client expectations by flawlessly executing project deliverables. Spearheaded the creation of a critical feedback feature and developed comprehensive test cases based on client-provided insulin calculations, demonstrating technical expertise and client-centric problem solving. Authored the Sprint 3 test plan document, ensuring rigorous quality control and project alignment with client needs.</p>
+                <ul>
+                <li><p>Successfully delivered the feedback feature as a key milestone on time.</p></li>
+                <li><p>Helped business stakeholders to develop a structured test planning and test cases that leads to
+                the success of testing phase.</p></li>
+                </ul>
             </div>
             `,
             contentType: "img",
@@ -136,9 +154,10 @@ export const Project = () =>{
             content:`
             <div className="Pro-Content">
                 <ul>
-                    <li><p>Frontend Programmer</p></li>
+                    <li><p>Frontend Developer</p></li>
                 </ul>
                 <p><strong>Soout</strong> is a Android mobile application bring outdoors to social life.</p>
+                <h3><strong>Key Responsibilities</strong></h3>
                 <ul>
                     <li><p>Design the UI and UX of the application to provide a user friendly UI</p></li>
                     <li><p>Program the User Profile, Log in, Sign in, Forgot Password, Send Verifications Email activities and functions.</p></li>
@@ -163,6 +182,7 @@ export const Project = () =>{
                     <li><p>Producer</p></li>
                 </ul>
                 <p><strong>VIC Road Crashes</strong> is a Tableau Data Visualisation dashboard, present data that supports a clear and valid data story. The dashboard is exploratory or explanatory in nature, but it must have a coherent and clear theme or message about your data to help VicRoads reduce the number (social cost) of crashes.</p>
+                <h3><strong>Key Responsibilities</strong></h3>
                 <ul>
                     <li><p>Analsing the data to create a coherent and clear theme.</p></li>
                     <li><p>Design the whole dashboard style by the theme.</p></li>
@@ -185,12 +205,14 @@ export const Project = () =>{
                     <li><p>Main Developer & Main Designer</p></li>
                 </ul>
                 <p><strong>Visualization about Traffic</strong> is a data visualization about traffic for some state government departments developed by R shiny and Tableau.</p>
+                <h3><strong>Key Responsibilities</strong></h3>
                 <ul>
                     <li><p>Analsing the data to create a coherent and clear theme.</p></li>
                     <li><p>Using R shiny developed "Pedestrian Sensor and Interactive Chart", provide a data drilling feature.</p></li>
                     <li><p>Using R shiny developed interactive "Traffic volume map", provide a clear showcase for the traffic volume</p></li>
                     <li><p>Design the Dashboard style and program CSS</p></li>
                 </ul>
+                <p>Cover and background photo by Pixabay: https://www.pexels.com/photo/vehicle-in-road-at-golden-hour-210182/</p>
             </div>
             `,
             contentType: "img",

@@ -52,7 +52,8 @@ export const Banner =() =>{
                                 <h1>{'A '}<span className="wrap">{text}</span></h1>
                             </div>
                             
-                            <p>Graduate from The University of Melbourne, study master of Information Technology, eager to secure a role in entry level website developer, or game developer.</p>
+                            <p>Having graduated with a Master of Information Technology (Computing) from The University of
+Melbourne, I am now seeking an entry-level position in software or game development.</p>
                             <a href={resume} download="JasonResume" className="download-button">Get My Resume <img src={download}/></a>
 
                         </Col>
@@ -66,7 +67,9 @@ export const Banner =() =>{
                 <div className='container'>
                     <div className="about-bx">
                         <h2>ABOUT</h2>
-                        <p>Skilled and experienced with <strong>Website</strong> and <strong>Game</strong> Development. My expertise lies in developing innovative software solutions, solving complex problems, collaborating effectively within teams, and managing projects independently.</p>
+                        <p>Skilled and experienced with <strong>Website</strong> and <strong>Game</strong> Development. I am passionate
+about developing innovative software solutions, solving complex problems, introducing new ideas, and
+coordinating technical projects..</p>
                         
 
                     </div>
