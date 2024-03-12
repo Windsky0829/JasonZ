@@ -21,6 +21,16 @@ import ProjShow7 from "../images/Numbats_showcase.png"
 import ProjImg8 from "../images/pexels-pixabay-210182.jpg"
 import ProjImgBack8 from "../images/pexels-pixabay-2101822.jpg"
 import ProjShow8 from "../images/Traffic_show.png"
+import ProjImg9 from "../images/theislandicon.png"
+import ProjImgBack9 from "../images/EdSplash.png"
+import ProjShow91 from "../images/TheIslandShowCase1.png"
+import ProjShow92 from "../images/TheIslandShowCase2.png"
+import ProjShow93 from "../images/TheIslandShowCase3.png"
+import ProjShow94 from "../images/TheIslandShowCase4.png"
+import ProjShow95 from "../images/TheIslandShowCase5.png"
+import ProjShow96 from "../images/TheIslandShowCase6.png"
+
+
 
 export const Project = () =>{
 
@@ -72,7 +82,6 @@ export const Project = () =>{
             description:"A cartoon style survival game",
             content:`
             <div className="Pro-Content">
-                <p><strong>Sorry! The image or video of this project haven't done yet.</strong></p>
                 <ul>
                     <li><p>Team Leader and Principal Game Developer</p></li>
                 </ul>
@@ -102,9 +111,9 @@ export const Project = () =>{
             </div>
             `,
             contentType: "img",
-            imgUrl:ProjImg1,
-            imgBack:ProjImgBack1,
-            imgShowCase:ProjShow1,
+            imgUrl:ProjImg9,
+            imgBack:ProjImgBack9,
+            imgShowCase:[ProjShow91,ProjShow92,ProjShow93,ProjShow94,ProjShow95,ProjShow96],
         },
     ];
 
